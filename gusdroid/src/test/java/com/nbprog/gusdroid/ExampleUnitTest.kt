@@ -12,6 +12,8 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        val tag = "<ns:pKluczUzytkownika>"
+        val closeTag = tag.replace("<","</")
+        assertTrue(closeTag == "</ns:pKluczUzytkownika>")
     }
 }

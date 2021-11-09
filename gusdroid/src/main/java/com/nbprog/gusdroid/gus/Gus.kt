@@ -1,7 +1,8 @@
 package com.nbprog.gusdroid.gus
 
-import com.nbprog.gusdroid.gus.methods.Authenticate
+import com.nbprog.gusdroid.gus.methods.authenticate.Authenticate
 import com.nbprog.gusdroid.gus.methods.GetInfoByParameter
+import com.nbprog.gusdroid.gus.methods.authenticate.AuthenticateRequestBuilder
 import com.nbprog.gusdroid.model.AuthResult
 import com.nbprog.gusdroid.model.FullReport
 import com.nbprog.gusdroid.model.GusResult
@@ -21,9 +22,10 @@ object Gus {
         setLevel(HttpLoggingInterceptor.Level.BODY)
     }
 
+    //TODO: Fix interceptor, insteaad adding all the same in service
     private val xmlInterceptor = Interceptor { chain ->
         val requestBuilder = chain.request().newBuilder();
-        requestBuilder.header("Content-Type", "Content-Type: application/soap+xml");
+        requestBuilder.addHeader("Content-Type", "Content-Type: application/soap+xml");
         chain.proceed(requestBuilder.build());
     }
 
@@ -51,6 +53,9 @@ object Gus {
     }
 
     suspend fun authenticate(authKey : String) : GusResult<AuthResult> {
-        return Authenticate().authenticate(authKey)
+        val params = mapOf(
+            AuthenticateRequestBuilder.KEY to authKey
+        )
+        return Authenticate().proceed(params)
     }
 }
