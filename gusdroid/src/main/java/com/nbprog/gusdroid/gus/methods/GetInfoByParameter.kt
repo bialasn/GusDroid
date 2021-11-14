@@ -64,14 +64,14 @@ class GetInfoByParameter {
         }
     }
 
-    suspend fun getFullReport(nip : String? = null, regon : String? = null): GusResult<FullReport> {
-        val request = requestBuilder(nip,regon)
-
-        return safeApiCall {
-            //TODO: get this from configuration
-            Gus.gusService.getFullReportS(Gus.sessionIdentifier, request)
-                .readAsHTML()
-                .mapToFullReport()
-        }
-    }
+//    suspend fun getFullReport(nip : String? = null, regon : String? = null): GusResult<FullReport> {
+//        val request = requestBuilder(nip,regon)
+//
+//        return safeApiCall {
+//            //TODO: get this from configuration
+//            Gus.gusService.getFullReportS(Gus.sessionIdentifier, request)
+//                .readAsHTML()
+//                .mapToFullReport()
+//        }
+//    }
 }

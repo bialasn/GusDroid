@@ -26,8 +26,10 @@ class AuthenticateRequestBuilder : RequestBuilder {
         var requestCreator = request
 
         parameters.forEach { (paramName,paramValue) ->
-            val paramCloseTag = paramName.replace("<","</")
-            requestCreator = request.replace("$paramName$paramCloseTag","$paramName$paramValue$paramCloseTag")
+            paramValue?.let {
+                val paramCloseTag = paramName.replace("<","</")
+                requestCreator = request.replace("$paramName$paramCloseTag","$paramName$it$paramCloseTag")
+            }
         }
         return requestCreator
     }

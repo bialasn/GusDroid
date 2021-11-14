@@ -1,3 +1,3 @@
 package com.nbprog.gusdroid.model
 
-data class AuthResult(val authKey : String)
+data class AuthResult(val authKey : String?)

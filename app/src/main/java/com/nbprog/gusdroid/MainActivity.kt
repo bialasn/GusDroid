@@ -13,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         lifecycleScope.launch {
             val result = Gus.authenticate("abcde12345abcde12345")
-            result
+            val info = Gus.getInfoBy(regon = "000331501")
+            info
         }
     }
 }
