@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.scalars.ScalarsConverterFactory
 
 object Configuration {
-    private const val BASE_URL = "https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/"
+    private const val BASE_URL = "https://wyszukiwarkaregon.stat.gov.pl/wsBIR/"
 
     private val xmlInterceptor = Interceptor { chain ->
         val requestBuilder = chain.request().newBuilder();
