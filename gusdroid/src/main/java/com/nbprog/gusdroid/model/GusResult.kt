@@ -8,6 +8,8 @@ sealed class GusResult<out T> {
     data class GenericError(val code: Int? = null, val error: String? = null): GusResult<Nothing>()
     data class ParsingError(val message : String): GusResult<Nothing>()
     object NetworkError: GusResult<Nothing>()
+
+    fun isSuccess() : Boolean = this is Success
 }
 
 suspend fun <T> safeApiCall(apiCall: suspend () -> T): GusResult<T> {
