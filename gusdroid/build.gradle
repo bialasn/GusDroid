@@ -50,3 +50,15 @@ dependencies {
 
     implementation 'com.android.support:multidex:2.0.1'
 }
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = "com.nbprog.gusdroidlib"
+                artifactId = "gusdroid"
+                version = '1.0.11'
+            }
+        }
+    }
+}
