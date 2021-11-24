@@ -9,4 +9,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GusDroid"
 include ':app'
-include ':gusdroidlib'
+include ':gusdroid'
