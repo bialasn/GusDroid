@@ -1,12 +1,10 @@
-package com.nbprog.gusdroid.gus.methods.authenticate
+package com.nbprog.gusdroidlib.gus.methods.authenticate
 
-import com.nbprog.gusdroid.gus.Configuration
-import com.nbprog.gusdroid.gus.Gus
-import com.nbprog.gusdroid.gus.base.BaseRequest
-import com.nbprog.gusdroid.gus.base.DomainMapper
-import com.nbprog.gusdroid.gus.base.RequestBuilder
-import com.nbprog.gusdroid.model.*
-import com.nbprog.gusdroid.util.extractFromTag
+import com.nbprog.gusdroidlib.gus.Configuration
+import com.nbprog.gusdroidlib.gus.base.BaseRequest
+import com.nbprog.gusdroidlib.gus.base.DomainMapper
+import com.nbprog.gusdroidlib.gus.base.RequestBuilder
+import com.nbprog.gusdroidlib.model.*
 
 class Authenticate : BaseRequest{
 

@@ -1,4 +1,4 @@
-package com.nbprog.gusdroid
+package com.nbprog.gusdroidlib
 
 import org.junit.Test
 

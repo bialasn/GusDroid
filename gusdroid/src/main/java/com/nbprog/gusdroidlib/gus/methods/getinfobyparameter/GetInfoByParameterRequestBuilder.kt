@@ -1,6 +1,6 @@
-package com.nbprog.gusdroid.gus.methods.getinfobyparameter
+package com.nbprog.gusdroidlib.gus.methods.getinfobyparameter
 
-import com.nbprog.gusdroid.gus.base.RequestBuilder
+import com.nbprog.gusdroidlib.gus.base.RequestBuilder
 
 class GetInfoByParameterRequestBuilder : RequestBuilder {
 

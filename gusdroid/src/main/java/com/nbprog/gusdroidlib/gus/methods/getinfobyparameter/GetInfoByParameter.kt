@@ -1,12 +1,12 @@
-package com.nbprog.gusdroid.gus.methods.getinfobyparameter
+package com.nbprog.gusdroidlib.gus.methods.getinfobyparameter
 
-import com.nbprog.gusdroid.gus.Configuration
-import com.nbprog.gusdroid.gus.Gus
-import com.nbprog.gusdroid.gus.base.BaseRequest
-import com.nbprog.gusdroid.gus.base.DomainMapper
-import com.nbprog.gusdroid.gus.base.RequestBuilder
-import com.nbprog.gusdroid.model.*
-import com.nbprog.gusdroid.util.readAsHTML
+import com.nbprog.gusdroidlib.gus.Configuration
+import com.nbprog.gusdroidlib.gus.Gus
+import com.nbprog.gusdroidlib.gus.base.BaseRequest
+import com.nbprog.gusdroidlib.gus.base.DomainMapper
+import com.nbprog.gusdroidlib.gus.base.RequestBuilder
+import com.nbprog.gusdroidlib.model.*
+import com.nbprog.gusdroidlib.util.readAsHTML
 
 class GetInfoByParameter : BaseRequest{
 

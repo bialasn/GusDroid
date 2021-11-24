@@ -4,9 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.whenCreated
-import com.nbprog.gusdroid.gus.Gus
-import com.nbprog.gusdroid.model.GusResult
+import com.nbprog.gusdroidlib.gus.Gus
+import com.nbprog.gusdroidlib.model.GusResult
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.nbprog.gusdroid.model
+package com.nbprog.gusdroidlib.model
 
 data class FullReport(
     val name: String? = null,

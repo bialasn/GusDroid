@@ -1,4 +1,4 @@
-package com.nbprog.gusdroid.gus.base
+package com.nbprog.gusdroidlib.gus.base
 
 interface RequestBuilder {
     val request : String

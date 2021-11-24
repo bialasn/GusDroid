@@ -1,9 +1,9 @@
-package com.nbprog.gusdroid.gus.methods.authenticate
+package com.nbprog.gusdroidlib.gus.methods.authenticate
 
-import com.nbprog.gusdroid.gus.base.DomainMapper
-import com.nbprog.gusdroid.model.AuthResult
-import com.nbprog.gusdroid.model.XMLParseException
-import com.nbprog.gusdroid.util.extractFromTag
+import com.nbprog.gusdroidlib.gus.base.DomainMapper
+import com.nbprog.gusdroidlib.model.AuthResult
+import com.nbprog.gusdroidlib.model.XMLParseException
+import com.nbprog.gusdroidlib.util.extractFromTag
 
 class AuthenticateMapper : DomainMapper<String, AuthResult> {
     override fun map(objectToMap: String): AuthResult {

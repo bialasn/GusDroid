@@ -1,6 +1,5 @@
-package com.nbprog.gusdroid.gus
+package com.nbprog.gusdroidlib.gus
 
-import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.Header
 import retrofit2.http.Headers

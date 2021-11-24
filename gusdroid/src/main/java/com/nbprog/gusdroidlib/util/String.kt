@@ -1,4 +1,4 @@
-package com.nbprog.gusdroid.util
+package com.nbprog.gusdroidlib.util
 
 import android.text.Html
 import java.lang.Exception

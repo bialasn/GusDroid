@@ -1,6 +1,6 @@
-package com.nbprog.gusdroid.gus.base
+package com.nbprog.gusdroidlib.gus.base
 
-import com.nbprog.gusdroid.model.GusResult
+import com.nbprog.gusdroidlib.model.GusResult
 
 interface BaseRequest {
 

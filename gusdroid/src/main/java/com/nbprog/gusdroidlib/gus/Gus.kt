@@ -1,12 +1,12 @@
-package com.nbprog.gusdroid.gus
+package com.nbprog.gusdroidlib.gus
 
-import com.nbprog.gusdroid.gus.methods.authenticate.Authenticate
-import com.nbprog.gusdroid.gus.methods.authenticate.AuthenticateRequestBuilder
-import com.nbprog.gusdroid.gus.methods.getinfobyparameter.GetInfoByParameter
-import com.nbprog.gusdroid.gus.methods.getinfobyparameter.GetInfoByParameterRequestBuilder
-import com.nbprog.gusdroid.model.AuthResult
-import com.nbprog.gusdroid.model.FullReport
-import com.nbprog.gusdroid.model.GusResult
+import com.nbprog.gusdroidlib.gus.methods.authenticate.Authenticate
+import com.nbprog.gusdroidlib.gus.methods.authenticate.AuthenticateRequestBuilder
+import com.nbprog.gusdroidlib.gus.methods.getinfobyparameter.GetInfoByParameter
+import com.nbprog.gusdroidlib.gus.methods.getinfobyparameter.GetInfoByParameterRequestBuilder
+import com.nbprog.gusdroidlib.model.AuthResult
+import com.nbprog.gusdroidlib.model.FullReport
+import com.nbprog.gusdroidlib.model.GusResult
 
 
 object Gus {

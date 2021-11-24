@@ -1,9 +1,9 @@
-package com.nbprog.gusdroid.gus.methods.getinfobyparameter
+package com.nbprog.gusdroidlib.gus.methods.getinfobyparameter
 
-import com.nbprog.gusdroid.gus.base.DomainMapper
-import com.nbprog.gusdroid.model.FullReport
-import com.nbprog.gusdroid.model.XMLParseException
-import com.nbprog.gusdroid.util.extractFromTag
+import com.nbprog.gusdroidlib.gus.base.DomainMapper
+import com.nbprog.gusdroidlib.model.FullReport
+import com.nbprog.gusdroidlib.model.XMLParseException
+import com.nbprog.gusdroidlib.util.extractFromTag
 
 class GetInfoByParameterMapper : DomainMapper<String, FullReport> {
     override fun map(objectToMap: String): FullReport {

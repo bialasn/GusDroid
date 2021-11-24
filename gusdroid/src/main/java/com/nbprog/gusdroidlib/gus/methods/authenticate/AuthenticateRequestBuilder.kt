@@ -1,6 +1,6 @@
-package com.nbprog.gusdroid.gus.methods.authenticate
+package com.nbprog.gusdroidlib.gus.methods.authenticate
 
-import com.nbprog.gusdroid.gus.base.RequestBuilder
+import com.nbprog.gusdroidlib.gus.base.RequestBuilder
 
 class AuthenticateRequestBuilder : RequestBuilder {
 

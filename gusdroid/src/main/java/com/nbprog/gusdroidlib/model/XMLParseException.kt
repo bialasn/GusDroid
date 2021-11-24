@@ -1,4 +1,4 @@
-package com.nbprog.gusdroid.model
+package com.nbprog.gusdroidlib.model
 
 import java.lang.Exception
 

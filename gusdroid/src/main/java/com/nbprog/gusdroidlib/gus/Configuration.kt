@@ -1,4 +1,4 @@
-package com.nbprog.gusdroid.gus
+package com.nbprog.gusdroidlib.gus
 
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
